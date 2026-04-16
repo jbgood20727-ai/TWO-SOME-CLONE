@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>투썸플레이스 - 선물하기</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Noto Sans KR", sans-serif;
+      }
+
+      body {
+        background: #f5f5f5;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .header .title {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .tabs {
+        display: flex;
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .tab {
+        flex: 1;
+        text-align: center;
+        padding: 12px 0;
+        color: #777;
+        font-size: 14px;
+        position: relative;
+      }
+
+      .tab.active {
+        color: #000;
+        font-weight: bold;
+      }
+
+      .tab.active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        width: 60%;
+        height: 2px;
+        background: #000;
+      }
+
+      .banner {
+        width: 100%;
+        background: #ddd;
+      }
+
+      .banner img {
+        width: 100%;
+        display: block;
+      }
+
+      .category {
+        margin-top: 10px;
+        background: #fff;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .category-item {
+        border: 1px solid #eee;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .category-item img {
+        width: 40px;
+        margin-bottom: 10px;
+      }
+
+      .category-item p {
+        font-size: 12px;
+      }
+
+     
+
+      .section {
+        padding: 20px;
+        background: #fff;
+        margin-top: 10px;
+      }
+
+      .section h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+
+      .filter {
+        display: flex;
+        gap: 15px;
+        font-size: 13px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+      }
+
+      .filter span {
+        color: #888;
+        cursor: pointer;
+      }
+
+      .filter span.active {
+        color: #000;
+        font-weight: bold;
+        border-bottom: 2px solid #000;
+      }
+
+      .product-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+      }
+
+      .product {
+        background: #fff;
+      }
+
+      .product img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .product-name {
+        font-size: 14px;
+        margin-top: 8px;
+      }
+
+      .product-price {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div>☰</div>
+      <div class="title">선물하기</div>
+      <div>🛒</div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab active">홈</div>
+      <div class="tab">카테고리</div>
+      <div class="tab">선물함</div>
+    </div>
+
+    <div class="banner">
+      <img src="zzzzz.png" />
+    </div>
+
+    <div class="category">
+      <div class="category-item">
+        <img src="new2.png" />
+        <p>NEW</p>
+      </div>
+
+      <div class="category-item">
+        <img src="brithday.png" />
+        <p>생일/축하</p>
+      </div>
+
+      <div class="category-item">
+        <img src="rt.png" />
+        <p>감사/안부</p>
+      </div>
+
+      <div class="category-item">
+        <img src="cake3.png" />
+        <p>케이크</p>
+      </div>
+
+      <div class="category-item">
+        <img src="rmador.png" />
+        <p>금액권</p>
+      </div>
+
+      <div class="category-item">
+        <img src="elwjxm.png" />
+        <p>디저트 세트</p>
+      </div>
+
+      <div class="category-item">
+        <img src="ew.png" />
+        <p>디저트</p>
+      </div>
+
+      <div class="category-item">
+        <img src="zjvl.png" />
+        <p>커피/음료</p>
+      </div>
+    </div>
+
+    
+    <div class="section">
+      <h2>투썸을 선물하세요!</h2>
+
+      <div class="filter">
+        <span class="active">전체</span>
+        <span>1만원미만</span>
+        <span>1만원대</span>
+        <span>2만원대</span>
+        <span>3만원이상</span>
+      </div>
+
+      <div class="product-list">
+        <div class="product">
+          <img src="tmchtod.png" />
+          <div class="product-name">스초생®</div>
+          <div class="product-price">39,000원</div>
+        </div>
+
+        <div class="product">
+          <img src="rnjs.png" />
+          <div class="product-name">5만원권</div>
+          <div class="product-price">50,000원</div>
+        </div>
+
+        <div class="product">
+          <img src="1rnjs.png" />
+          <div class="product-name">1만원권</div>
+          <div class="product-price">10,000원</div>
+        </div>
+
+        <div class="product">
+          <img src="3rnjs.png" />
+          <div class="product-name">3만원권</div>
+          <div class="product-price">30,000원</div>
+        </div>
+
+        <div class="product">
+          <img src="mango1.png".png" />
+          <div class="product-name">망고생</div>
+          <div class="product-price">38,000원</div>
+        </div>
+
+        <div class="product">
+          <img src="tod.png" />
+          <div class="product-name">
+            생딸기 생크림 케이크 피스 + 아메리카노 R 2잔
+          </div>
+          <div class="product-price">15,900원</div>
+        </div>
+
+        <div class="product">
+          <img src="eee.png" />
+          <div class="product-name">떠먹는 스초생 + 아메리카노 R</div>
+          <div class="product-price">11,900원</div>
+        </div>
+
+        <div class="product">
+          <img src="이미지8.png" />
+          <div class="product-name">아메리카노R</div>
+          <div class="product-price">가격</div>
+        </div>
+
+        <div class="product">
+          <img src="이미지9.png" />
+          <div class="product-name">
+            떠먹는 스초생 + 로얄 밀크티 쉐이크 R 2잔
+          </div>
+          <div class="product-price">13,700원</div>
+        </div>
+
+        <div class="product">
+          <img src="이미지10.png" />
+          <div class="product-name">2만원권</div>
+          <div class="product-price">20,000원</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
